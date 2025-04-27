@@ -1,5 +1,5 @@
 
-import { Building, Factory, House, Restaurant, School } from "lucide-react";
+import { Building, Factory, Home, Coffee, School } from "lucide-react";
 import { Card } from "./ui/card";
 
 interface ClientTypeProps {
@@ -9,10 +9,10 @@ interface ClientTypeProps {
 
 const ClientType = ({ type, title }: ClientTypeProps) => {
   const icons = {
-    residencia: House,
+    residencia: Home,
     empresa: Building,
     escola: School,
-    restaurante: Restaurant,
+    restaurante: Coffee,
     fabrica: Factory,
   };
 

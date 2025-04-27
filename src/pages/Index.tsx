@@ -20,7 +20,7 @@ const Index = () => {
             Reduza sua conta de energia com energia renovável
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-gray-700">
-            Economize até 30% na sua conta de energia sem pagar nada por isso
+            Economize até 40% na sua conta de energia sem pagar nada por isso
           </p>
           <Button
             onClick={handleContactClick}
@@ -35,12 +35,39 @@ const Index = () => {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Para Todos os Tipos de Consumidores</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6">
             <ClientType type="residencia" title="Residências" />
-            <ClientType type="empresa" title="Empresas" />
+            <ClientType type="empresa" title="Empresas de todo porte" />
+            <ClientType type="autonomo" title="Autônomos" />
             <ClientType type="escola" title="Escolas" />
             <ClientType type="restaurante" title="Restaurantes" />
             <ClientType type="fabrica" title="Fábricas" />
+          </div>
+        </div>
+      </section>
+
+      {/* Partnership Section */}
+      <section className="py-16 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto text-center">
+          <h2 className="text-3xl font-bold mb-8">Nossa Parceria</h2>
+          <p className="text-xl mb-6">
+            Somos parceiros da Alexandria Energia Renovável, atendendo todo o Brasil com excelência.
+            Entre nossos clientes, temos o prazer de atender gigantes do mercado como a Cacau Show.
+          </p>
+        </div>
+      </section>
+
+      {/* ANEEL Law Section */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-8">Respaldo Legal</h2>
+          <div className="bg-gray-50 p-6 rounded-lg">
+            <p className="text-lg mb-4">
+              De acordo com a Lei 14.300 de 2022 da ANEEL (Agência Nacional de Energia Elétrica),
+              o consumidor tem o direito de escolher seu fornecedor de energia elétrica, possibilitando
+              a migração para o mercado livre de energia e garantindo economia significativa na conta
+              de energia.
+            </p>
           </div>
         </div>
       </section>

@@ -1,9 +1,9 @@
 
-import { Building, Factory, Home, Coffee, School } from "lucide-react";
+import { Building, Factory, Home, Coffee, School, User } from "lucide-react";
 import { Card } from "./ui/card";
 
 interface ClientTypeProps {
-  type: "residencia" | "empresa" | "escola" | "restaurante" | "fabrica";
+  type: "residencia" | "empresa" | "escola" | "restaurante" | "fabrica" | "autonomo";
   title: string;
 }
 
@@ -14,6 +14,7 @@ const ClientType = ({ type, title }: ClientTypeProps) => {
     escola: School,
     restaurante: Coffee,
     fabrica: Factory,
+    autonomo: User,
   };
 
   const Icon = icons[type];

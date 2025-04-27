@@ -1,4 +1,3 @@
-
 import { ChartLine, Users } from "lucide-react";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ClientType from "@/components/ClientType";
@@ -7,6 +6,10 @@ import { Button } from "@/components/ui/button";
 const Index = () => {
   const handleContactClick = () => {
     window.open("https://wa.me/5579988774996?text=Olá! Vim pelo seu site e gostaria de saber mais sobre a economia na conta de energia.", "_blank");
+  };
+
+  const handleEvaluationClick = () => {
+    window.open("https://lex.energiacom.vc/0H21ZI7", "_blank");
   };
 
   return (
@@ -22,12 +25,20 @@ const Index = () => {
           <p className="text-xl md:text-2xl mb-8 text-gray-700">
             Economize até 40% na sua conta de energia sem pagar nada por isso
           </p>
-          <Button
-            onClick={handleContactClick}
-            className="bg-secondary hover:bg-secondary/90 text-white px-8 py-6 text-lg rounded-full"
-          >
-            Descubra quanto você pode economizar
-          </Button>
+          <div className="flex flex-col md:flex-row gap-4 justify-center">
+            <Button
+              onClick={handleEvaluationClick}
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg rounded-full"
+            >
+              Fazer Avaliação de desconto
+            </Button>
+            <Button
+              onClick={handleContactClick}
+              className="bg-secondary hover:bg-secondary/90 text-white px-8 py-6 text-lg rounded-full"
+            >
+              Descubra quanto você pode economizar
+            </Button>
+          </div>
         </div>
       </section>
 
